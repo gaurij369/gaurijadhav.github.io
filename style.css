@@ -1,0 +1,111 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #fff;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('background.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+
+.carousel-indicators{
+  top: 80px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  text-align: center;
+}
+
+.headline{
+  color: #D4AF37;
+}
+
+@media only screen and (max-width: 1300px) {
+  .carousel-indicators{
+    top: 70px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .carousel-indicators{
+    top: 100px;
+  }
+
+  .footer {
+    height: 60px;
+    text-align: center;
+    position: relative;
+    bottom: -500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-indicators{
+    top: 130px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .carousel-indicators{
+    top: 200px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .carousel-indicators{
+    top: 180px;
+  }
+
+  p{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .carousel-indicators{
+    top: 180px;
+  }
+
+  p{
+    font-size: 12px;
+  }
+}
